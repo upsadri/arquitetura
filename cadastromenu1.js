@@ -35,7 +35,6 @@ while (menu !== 5) {
       quantidade = Number(prompt("digite a quantidade: "));
       prazo = Number(prompt("digite o prazo: "));
 
-      // definição da prioridade (corrigida)
       if (prazo <= 2) {
          prioridade = "URGENTE";
       } else if (prazo <= 5) {
@@ -46,7 +45,6 @@ while (menu !== 5) {
          prioridade = "BAIXA";
       }
 
-      // adicionando prioridade no objeto
       Pedidos.push({
          codigo,
          produto,
